@@ -5,6 +5,7 @@ html,
       height: 100%;
     }
 
+
     @media (max-width: 559px) {
 
       html,
@@ -40,3 +41,6 @@ html,
         background: #1C2331 !important;
       }
     }
+
+
+    
