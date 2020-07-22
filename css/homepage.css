@@ -229,6 +229,10 @@ body {
   .fixedsticky {
     top: 0;
   }
+
+  .navbar > .text-dark :hover{
+    color: #0462b4;
+  }
   
   
   
@@ -249,9 +253,9 @@ body {
   /* The description text interferes with the indicator nav
   so this hides on narrow mobile
   */
-  .carousel-caption p {
+  /* .carousel-caption p {
     display:none;
-  }
+  } */
   @media (min-width: 500px) {
     .carousel-caption p {
       display:block;
@@ -262,6 +266,10 @@ body {
   /* centers the carousel image on super wide screens */
   .carousel-item img {
     margin:0 auto;
+
+    /* max-width: 100vh; */
+    /* max-height: 90vh; */
+
   }
   
   
@@ -333,3 +341,110 @@ body {
       font-size: 3.5rem;
     }
   }
+
+  #nosotros{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /* carousel  */
+  .texto-car > h2{
+    font-size: 80px; 
+    color: white; 
+    text-decoration: none;
+  }
+
+  .texto-car > h2 > spam {
+    font-size: 60px; 
+  }
+
+  .texto-car > h5{
+    font-size: 30px; 
+  }
+
+  .texto-car > p{
+    font-size: 22px; 
+  }
+
+  @media (max-width: 900px) {
+    .texto-car > h2{
+      font-size: 60px; 
+    }
+  
+    .texto-car > h2 > spam {
+      font-size: 40px; 
+    }
+  
+    .texto-car > h5{
+      font-size: 25px; 
+    }
+  
+    .texto-car > p{
+      font-size: 18px; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .texto-car > h2{
+      font-size: 50px; 
+    }
+  
+    .texto-car > h2 > spam {
+      font-size: 30px; 
+    }
+  
+    .texto-car > h5{
+      font-size: 22px; 
+    }
+  
+    .texto-car > p{
+      font-size: 15px; 
+    }
+  }
+
+  @media (max-width: 600px) {
+    .texto-car > h2{
+      font-size: 40px; 
+    
+    }
+  
+    .texto-car > h2 > spam {
+      font-size: 20px; 
+    }
+  
+    .texto-car > h5{
+      font-size: 18px; 
+      display: none;
+    }
+  
+    .texto-car > p{
+      font-size: 12px;
+    }
+
+    .carousel-caption {
+      top: -10%;
+    }
+
+    .texto-car{
+      height: 100%;
+    }
+
+  }
+  @media (max-width: 374px) {
+
+    .carousel-caption {
+      top: -20%;
+    }
+    
+    .carousel-indicators{
+      display: none;
+    }
+
+  }
+
+  /* carousel  */
+  
+  
