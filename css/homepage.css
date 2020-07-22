@@ -436,7 +436,7 @@ body {
   @media (max-width: 374px) {
 
     .carousel-caption {
-      top: -20%;
+      top: -15%;
     }
     
     .carousel-indicators{
