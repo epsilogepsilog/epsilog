@@ -246,9 +246,9 @@ body {
     background-color: #191919;
   }
   
-  .carousel-caption {
+ /*  .carousel-caption {
     top: 10%;
-  }
+  } */
   
   /* The description text interferes with the indicator nav
   so this hides on narrow mobile
@@ -424,9 +424,9 @@ body {
       font-size: 12px;
     }
 
-    .carousel-caption {
+    /* .carousel-caption {
       top: -10%;
-    }
+    } */
 
     .texto-car{
       height: 100%;
@@ -435,9 +435,9 @@ body {
   }
   @media (max-width: 374px) {
 
-    .carousel-caption {
+    /* .carousel-caption {
       top: -15%;
-    }
+    } */
     
     .carousel-indicators{
       display: none;
@@ -447,4 +447,31 @@ body {
 
   /* carousel  */
   
+  /* imagenes */
+  @media (max-width: 575px) {
+    .gal{
+      width: 33.3%;
+    }
+    .gal2{
+      width: 50%;
+    }
+
+  }
   
+  /* imagenes */
+  .bg-trans{
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 1s ease;
+  }
+  .bg-light{
+    transition: all 1s ease;
+  }
+  .ocultar{
+    opacity: 0;
+    transition: opacity 2s;
+    } 
+  
+  .visualizar{
+    opacity: 1;
+    transition: opacity 2s;
+    } 
