@@ -24,7 +24,9 @@ G R I D  &  T Y P E
 */
 
 body {
-    background: #e2e2e2;
+    /* background: #e2e2e2; */
+    background: white;
+
   }
   
   /* Set a display font for headings and quotes */
