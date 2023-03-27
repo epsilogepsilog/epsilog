@@ -668,6 +668,28 @@
                 <h2 class="font-700">Trabajemos juntos!</h2>
                 <h4 class="karla-font">si estás interesado en contactarnos llena el siguiente formulario</h4>
                 
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                  <div class="form-group">
+                    
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Nombre">
+                  </div>
+                  <div class="form-group">
+                    
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="e-mail">
+                  </div>
+                  <div class="form-group">
+                    
+                    <input type="text" class="form-control" id="subject" name="subject" required placeholder="Asunto">
+                  </div>
+                  <div class="form-group">
+                    
+                    <textarea class="form-control" rows="10" id="message" name="message" required placeholder="deje su mensaje"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                  <button type="submit" class="btn btn-outline-primary btn-primary">Enviar</button>
+                </form>
               </div>
             </div>
           </div>
