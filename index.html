@@ -1,142 +1,768 @@
-<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="generator" content="">
-    <title>Epsilog</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Designsninja">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Epsilog</title>
+  <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Core Style Sheets -->
+  <link rel="stylesheet" href="assets/css/master.css">
+  <!-- Responsive Style Sheets -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- Revolution Style Sheets -->
+  <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+  <link rel="stylesheet" type="text/csss" href="revolution/css/navigation.css">
 
-    <!-- FontAwesome -->
-    <link href="css/all.css" rel="stylesheet">
-
-    <!-- Estilos -->
-    <link href="css/estilos.css" rel="stylesheet">
-    
-  <!-- Material Design Bootstrap -->
-  <link href="css/animate.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
+   <!-- Iconos fontAwesome -->
+   <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+   rel="stylesheet"
+   integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+ />
+ <!-- Iconos fontAwesome -->
 
 </head>
 
 <body>
 
-  <body>
-
-  
-    <!-- Full Page Intro -->
-    <div class="view">
-  
-      <video class="video-intro" poster="images/background.jpg" playsinline autoplay
-        muted loop>
-        <source src="video/Lines-min (1).mp4" type="video/mp4">
-      </video>
-  
-      <!-- Mask & flexbox options-->
-      <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-  
-        <!-- Content -->
-        <div class="text-center white-text mx-5 wow fadeIn">
-  
-          <h1 class="display-4 mb-4">
-            <strong>Próximamente</strong>
-          </h1>
-  
-          <!-- Time Counter -->
-          <p id="time-counter" class="border border-light my-4"></p>
-  
-  
-          <h4 class="mb-4">
-            <strong>Estamos trabajando en el diseño de nuestra página Web </strong>
-          </h4>
-  
-          <h4 class="mb-4 d-none d-md-block">
-            <strong>comercial@epsilog.com.co</strong>
-          </h4>
-  
-        </div>
-        <!-- Content -->
-  
-      </div>
-      <!-- Mask & flexbox options-->
-  
+  <!--== Loader Start ==-->
+  <div id="loader-overlay">
+    <div class="loader">
+      <div class="loader-inner"></div>
     </div>
-    <!-- Full Page Intro -->
-  
-    <!--Footer-->
-    <footer class="page-footer text-center font-small wow fadeIn">
+  </div>
+  <!--== Loader End ==-->
 
-      <!--Copyright-->
-      <div class="footer-copyright py-3">
-        © 2020 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> epsilog.com.co </a>
+  <!--== Wrapper Start ==-->
+  <div class="wrapper">
+
+    <!--== Header Start ==-->
+    <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full">
+      <!--== Start Top Search ==-->
+      <div class="fullscreen-search-overlay" id="search-overlay">
+        <a href="#" class="fullscreen-close" id="fullscreen-close-button">
+          <i class="icofont icofont-close"></i>
+        </a>
+        <div id="fullscreen-search-wrapper">
+          <form method="get" id="fullscreen-searchform">
+            <input type="text" value="" placeholder="Type and hit Enter..." id="fullscreen-search-input"
+              class="search-bar-top">
+            <i class="fullscreen-search-icon icofont icofont-search">
+              <input value="" type="submit">
+            </i>
+          </form>
+        </div>
       </div>
-      <!--/.Copyright-->
-  
+      <!--== End Top Search ==-->
+      <div class="container-fluid">
+        <!--== Start Atribute Navigation ==-->
+        <div class="attr-nav hidden-xs sm-display-none">
+          <ul class="social-media-dark social-top">
+            <li><a href="#" class="icofont icofont-social-facebook"></a></li>
+            <li><a href="#" class="icofont icofont-social-twitter"></a></li>
+            <li class="search"><a href="#" id="search-button"><i class="icofont icofont-search"></i></a></li>
+          </ul>
+        </div>
+        <!--== End Atribute Navigation ==-->
+
+        <!--== Start Header Navigation ==-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+            <i class="tr-icon ion-android-menu"></i>
+          </button>
+          <div class="logo">
+            <a href="index.html">
+              <img class="logo logo-display" src="assets/images/logo-white.png" alt="">
+              <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt="">
+            </a>
+          </div>
+        </div>
+        <!--== End Header Navigation ==-->
+
+        <!--== Collect the nav links, forms, and other content for toggling ==-->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
+            <li class="dropdown"><a href="#">Inicio</a>
+              
+            </li>
+            <li class="dropdown"><a href="index.html#servicios" class="dropdown-toggle" data-toggle="dropdown">Servicios</a>
+              <ul class="dropdown-menu">
+                <li><a href="creative-agency.html">Control geológico</a></li>
+                <li><a href="digital-agency.html">Cromatografía de alta velocidad</a></li>
+                <li><a href="minimal-agency.html">Monitoreo y análisis de parámetros de perforación</a></li>
+                <li><a href="minimal-agency.html">Presión de poro</a></li>
+                <li><a href="minimal-agency.html">Geomecánica</a></li>
+                <li><a href="minimal-agency.html">Transmisión de datos en tiempo real</a></li>
+                <li><a href="minimal-agency.html">Dataplus® (Metodología para la optimización y mejora en los procesos
+                    de perforación) </a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown megamenu-fw">
+              <a href="index.html#quienessomos">Quienes somos</a>
+            </li>
+            <li class="dropdown">
+              <a href="index.html#contacto">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+        <!--== /.navbar-collapse ==-->
+      </div>
+    </nav>
+    <!--== Header End ==-->
+
+    <!--== Hero Slider Start ==-->
+    <section class="remove-padding transition-none">
+      <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+        data-alias="classic4export" data-source="gallery"
+        style="margin:0px auto;background-color:#000;padding:0px;margin-top:0px;margin-bottom:0px;">
+
+        <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+          <ul> <!-- SLIDE  -->
+            <li data-index="rs-3045" data-transition="boxfade" data-slotamount="default" data-hideafterloop="0"
+              data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+              data-masterspeed="2000" data-thumb="assets/images/slides/home-bg-1-100x50.jpg" data-rotate="0"
+              data-fstransition="slidingoverlayvertical" data-fsmasterspeed="1500" data-fsslotamount="7"
+              data-saveperformance="off" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
+              data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description=""
+              data-mediafilter="earlybird">
+              <!-- MAIN IMAGE -->
+              <img src="assets/images/slides/home-bg-26.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+              <!-- LAYERS -->
+
+              <!-- LAYER NR. 1 -->
+              <div class="hero-text-wrap">
+                <div class="">
+
+                  <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-3" id="slide-3045-layer-1"
+                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']" data-voffset="['20','20','20','20']"
+                    data-fontsize="['60','60','40','20']" data-lineheight="['80','80','80','40']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                    data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    data-textAlign="['center','center','center','center']" data-paddingtop="[10,10,10,10]"
+                    data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
+                    style="z-index: 5; white-space: nowrap;font-family: 'Poppins', sans-serif;font-weight:700;text-align:center;">
+                    Ofrecemos Excelencia e Innovación <br> a nuestros clientes.
+                  </div>
+
+                  <!-- LAYER NR. 3 -->
+                  <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-1" id="slide-3045-layer-2"
+                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','150']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":0,"speed":2500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                    style="z-index: 7; white-space: nowrap;cursor:default;">
+                    <a class="btn btn-light-outline btn-lg btn-square" tabindex="0" href="index.html#contacto">Contáctanos</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+            <!-- SLIDE  -->
+            <li data-index="rs-3046" data-transition="incube" data-slotamount="default" data-hideafterloop="0"
+              data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+              data-masterspeed="2000" data-thumb="assets/images/slides/home-bg-2-100x50.jpg" data-rotate="0"
+              data-fstransition="slidedown" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
+              data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+              data-param8="" data-param9="" data-param10="" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="assets/images/slides/home-bg-12.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+              <!-- LAYERS -->
+
+              <!-- LAYER NR. 1 -->
+              <div class="hero-text-wrap">
+                <!-- LAYER NR. 1 -->
+                <div class="">
+
+                  <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-3" id="slide-3045-layer-3"
+                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']" data-voffset="['20','20','20','20']"
+                    data-fontsize="['60','60','40','20']" data-lineheight="['80','80','80','40']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                    data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    data-textAlign="['center','center','center','center']" data-paddingtop="[10,10,10,10]"
+                    data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
+                    style="z-index: 5; white-space: nowrap;font-family: 'Poppins', sans-serif;font-weight:700;text-align:center;">
+                    Comprometidos con la calidad, la seguridad, <br>el medio ambiente y <br> la responsabilidad social
+                    empresarial.</div>
+
+                  <!-- LAYER NR. 3 -->
+                  <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-1" id="slide-3045-layer-4"
+                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','150']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":0,"speed":2500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                    style="z-index: 7; white-space: nowrap;cursor:default;"><a
+                      class="btn btn-light-outline btn-lg btn-square" tabindex="0" href="index.html#contacto">Contáctanos</a> </div>
+                </div>
+            </li>
+            <!-- SLIDE  -->
+
+            <li data-index="rs-3047" data-transition="incube" data-slotamount="default" data-hideafterloop="0"
+              data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+              data-masterspeed="2000" data-thumb="assets/images/slides/home-bg-2-100x50.jpg" data-rotate="0"
+              data-fstransition="slidedown" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
+              data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+              data-param8="" data-param9="" data-param10="" data-description="">
+              <!-- MAIN IMAGE -->
+              <img src="assets/images/slides/home-bg-13.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+              <!-- LAYERS -->
+
+              <!-- LAYER NR. 1 -->
+              <div class="hero-text-wrap">
+                <!-- LAYER NR. 1 -->
+                <div class="">
+
+                  <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-3" id="slide-3045-layer-5"
+                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']" data-voffset="['20','20','20','20']"
+                    data-fontsize="['60','60','40','20']" data-lineheight="['80','80','80','40']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                    data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    data-textAlign="['center','center','center','center']" data-paddingtop="[10,10,10,10]"
+                    data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
+                    style="z-index: 5; white-space: nowrap;font-family: 'Poppins', sans-serif;font-weight:700;text-align:center;">
+                    Nuestros Clientes <br> Son nuestros aliados.</div>
+
+                  <!-- LAYER NR. 3 -->
+                  <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-1" id="slide-3045-layer-6"
+                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','150']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":0,"speed":2500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                    style="z-index: 7; white-space: nowrap;cursor:default;"><a
+                      class="btn btn-light-outline btn-lg btn-square" tabindex="0" href="index.html#contacto">Contáctanos</a> </div>
+                </div>
+            </li>
+            <!-- SLIDE  -->
+
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--== Hero Slider End ==-->
+
+    <!--== Info Box Start ==-->
+    <section class="pb-60" id="servicios">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 section-heading">
+            <h5 class="default-color mt-0 text-uppercase">Brindamos servicios de: </h5>
+            <h2 class="mt-0 font-700">monitoreo de parámetros de perforación, control geológico, <br> análisis de datos y transmisión en tiempo real</h2>
+          </div>
+        </div>
+        <div class="row service-box-style-04 mt-50">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="flipper">
+              <div class="text-center mb-50 main-box">
+                <div class="box-front height-500px white-bg">
+                  <div class="content-wrap">
+                    
+                      <img  src="assets/images/services/controlgeologico.png" alt="" 
+                            data-bgposition="center center" 
+                            data-bgfit="cover" 
+                            style=" width:120px;
+                                    height:120px;
+                                    border-radius:150px;
+                                    border:2px solid #666;">
+                    
+                    <h4 class="font-700">Control Geológico</h4>
+                    <hr class="center_line gradient-bg">
+                    <p class="font-400 mt-20">
+                      Caracterización litológica y correlación de las formaciones perforadas, determinación de topes, descripción de núcleos...
+                    </p>
+                  </div>
+                </div>
+                <div class="box-back height-500px gradient-bg">
+                  <div class="content-wrap white-color">
+                    <hr class="center_line white-bg">
+                    <p class="font-400 mt-20">
+                      <li>Análisis cualitativo de la presencia de hidrocarburos en muestra de zanja.</li>
+                      <li>Determinación de zonas con potencial productor de petróleo o gas en un pozo como parte de la evaluación geológica. </li>
+                      <li>Entrega de reportes y registros gráficos necesarios para la integración del modelo geológico del yacimiento.</li>
+                      <li>Elaboración de registros gráficos compuestos.</li>
+                      <li>Recolección, preparación y empaque de muestras de zanja de acuerdo a los estándares de la ANH.</li>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="flipper">
+              <div class="text-center mb-50 main-box">
+                <div class="box-front height-500px white-bg">
+                  <div class="content-wrap">
+                    <img  src="assets/images/services/cromatografia.png" alt="" 
+                            data-bgposition="center center" 
+                            data-bgfit="cover" 
+                            style=" width:120px;
+                                    height:120px;
+                                    border-radius:150px;
+                                    border:2px solid #666;">
+                    <h4 class="font-700">Cromatografía de alta velocidad</h4>
+                    <hr class="center_line gradient-bg">
+                    <p class="font-400 mt-20">
+                      Cromatógrafo de alta velocidad CP-490 marca Agilent, separación de la muestra de gas en sus componentes principales: 
+                    </p>
+                  </div>
+                </div>
+                <div class="box-back height-500px gradient-bg">
+                  <div class="content-wrap white-color">
+                    <hr class="center_line white-bg">
+                    <p class="font-400 mt-20">
+                      <li>Metano (CH4)</li>
+                      <li>Etano (C2H6)</li>
+                      <li>Propano (C3H8)</li>
+                      <li>Butano (C4H10) </li>
+                      <li>Pentano (C5H12) </li>
+                      Todos en 30 segundos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="flipper">
+              <div class="text-center mb-50 main-box">
+                <div class="box-front height-500px white-bg">
+                  <div class="content-wrap">
+                    <img  src="assets/images/services/monitoreo.png" alt="" 
+                            data-bgposition="center center" 
+                            data-bgfit="cover" 
+                            style=" width:120px;
+                                    height:120px;
+                                    border-radius:150px;
+                                    border:2px solid #666;">
+                    <h4 class="font-700">Monitoreo y análisis de parámetros de perforación</h4>
+                    <hr class="center_line gradient-bg">
+                    <p class="font-400 mt-20">
+                      Todos los parámetros se almacenan normalmente cada 10 – 15 segundos y pueden ser consultada en cualquier momento.
+                    </p>
+                  </div>
+                </div>
+                <div class="box-back height-500px gradient-bg">
+                  <div class="content-wrap white-color">
+                    <hr class="center_line white-bg">
+                    <p class="font-400 mt-20">
+                      <li>Análisis de tiempos, monitoreo de viajes, limpieza de hueco.</li>
+                      <li>Registro de brocas, curva de avance, elaboración y actualización estado mecánico</li>
+                      <li>Hidraúlicas y limpieza de hueco.</li>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="flipper">
+              <div class="text-center mb-50 main-box">
+                <div class="box-front height-500px white-bg">
+                  <div class="content-wrap">
+                    <img  src="assets/images/services/preiondeporo.png" alt="" 
+                            data-bgposition="center center" 
+                            data-bgfit="cover" 
+                            style=" width:120px;
+                                    height:120px;
+                                    border-radius:150px;
+                                    border:2px solid #666;">
+                    <h4 class="font-700">Presión de Poro</h4>
+                    <hr class="center_line gradient-bg">
+                    <p class="font-400 mt-20">
+                      Análisis del tren de compactación y la presión de poro a medida que se perfora a partir de los datos de adquisición de mudlogging.
+                  </div>
+                </div>
+                <div class="box-back height-500px gradient-bg">
+                  <div class="content-wrap white-color">
+                    <div class="icon-wrap white-bg">
+                      <i class="icofont icofont-transparent font-40px gradient-color"></i>
+                    </div>
+                    <h4 class="font-700">Presión de Poro</h4>
+                    <hr class="center_line white-bg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row service-box-style-04 mt-5">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="flipper">
+              <div class="text-center mb-50 main-box">
+                <div class="box-front height-500px white-bg">
+                  <div class="content-wrap">
+                    <img  src="assets/images/services/geomecanica.png" alt="" 
+                            data-bgposition="center center" 
+                            data-bgfit="cover" 
+                            style=" width:120px;
+                                    height:120px;
+                                    border-radius:150px;
+                                    border:2px solid #666;">
+                    <h4 class="font-700">Geomecánica</h4>
+                    <hr class="center_line gradient-bg">
+                    <p class="font-400 mt-20">
+                      <li> Cálculo y seguimiento del MSE</li>
+                      <li> Monitoreo y descripción de Cavings</li>
+                      <li> Torque y arrastre</li>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="box-back height-500px gradient-bg">
+                  <div class="content-wrap white-color">
+                    <hr class="center_line white-bg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="flipper">
+              <div class="text-center mb-50 main-box">
+                <div class="box-front height-500px white-bg">
+                  <div class="content-wrap">
+                    <img  src="assets/images/services/transmision.png" alt="" 
+                            data-bgposition="center center" 
+                            data-bgfit="cover" 
+                            style=" width:120px;
+                                    height:120px;
+                                    border-radius:150px;
+                                    border:2px solid #666;">
+                    <h4 class="font-700">Transmisión de datos en tiempo real</h4>
+                    <hr class="center_line gradient-bg">
+                    <p class="font-400 mt-20">
+                      transmisión remota y tráfico de información priorizado desde el servidor en pozo hacia el servidor remoto
+                    </p>
+                  </div>
+                </div>
+                <div class="box-back height-500px gradient-bg">
+                  <div class="content-wrap white-color">
+                    <hr class="center_line white-bg">
+                    <p class="font-400 mt-20">
+                      permitiendo la reconstrucción de la base de datos del pozo y la transmisión de los datos en tiempo real 
+                      para su visualización y consulta desde las ubicaciones del cliente en oficinas locales y/o remotas o en 
+                      cualquier otra ubicación con acceso a internet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="flipper">
+              <div class="text-center mb-50 main-box">
+                <div class="box-front height-500px white-bg">
+                  <div class="content-wrap">
+                    <img  src="assets/images/services/dataplus.png" alt="" 
+                            data-bgposition="center center" 
+                            data-bgfit="cover" 
+                            style=" width:120px;
+                                    height:120px;
+                                    border-radius:150px;
+                                    border:2px solid #666;">
+                    <h4 class="font-700">Dataplus® <br>
+                      </h4>
+                    <hr class="center_line gradient-bg">
+                    <p class="font-400 mt-20">
+                      Metodología para la optimización y mejora en los procesos de perforación
+                    </p>
+                  </div>
+                </div>
+                <div class="box-back height-500px gradient-bg">
+                  <div class="content-wrap white-color">
+                    <hr class="center_line white-bg">
+                    <p class="font-400 mt-20">
+                      Análisis de los tiempos y desempeño de la perforación utilizando MSE y los 
+                      parámetros de perforación para identificar tiempos invisibles y oportunidades de mejora.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    <!--== Info Box End ==-->
+
+    <!--== Portfolio Start ==-->
+    <section class="white-bg pt-0 dark-block">
+      <div class="portfolio-filter-header">
+        <div class="row">
+          <div class="col-sm-8 section-heading">
+            <h5 class="white-color mt-0 text-uppercase">EXPERIENCIA Y DESEMPEÑO</h5>
+            <h4 class="mt-0 font-200 white-color">El desempeño operacional del equipo de trabajo en campo nos ha permitido corresponder a la confianza de nuestros clientes incrementando el número de pozos perforados.
+              Las relaciones con los clientes se mantienen basados en el compromiso de suministrar un servicio de calidad con información siempre a tiempo, que apoye la toma de decisiones adecuadas y permita anticiparse a eventos no Productivos.
+              </h4>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-minus-50">
+          <div class="col-md-12">
+
+            <div id="portfolio-gallery" class="cbp hover-type-2">
+              <div class="cbp-item col-md-4 col-sm-4 with-spacing">
+                <div class="portfolio gallery-image-hover text-center">
+                  <div class="folio-overlay"></div>
+                  <img src="assets/images/portfolio/grid/55.jpg" alt="">
+                  <div class="portfolio-wrap">
+                    <ul class="portfolio-details">
+                      <li><a class="cbp-lightbox" href="assets/images/portfolio/grid/55.jpg"><i
+                            class="icofont icofont-search"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cbp-item col-md-4 col-sm-4 with-spacing">
+                <div class="portfolio gallery-image-hover text-center">
+                  <div class="folio-overlay"></div>
+                  <img src="assets/images/portfolio/grid/56.jpg" alt="">
+                  <div class="portfolio-wrap">
+                    <ul class="portfolio-details">
+                      <li><a class="cbp-lightbox" href="assets/images/portfolio/grid/56.jpg"><i
+                            class="icofont icofont-search"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cbp-item col-md-4 col-sm-4 with-spacing">
+                <div class="portfolio gallery-image-hover text-center">
+                  <div class="folio-overlay"></div>
+                  <img src="assets/images/portfolio/grid/57.jpg" alt="">
+                  <div class="portfolio-wrap">
+
+                    <ul class="portfolio-details">
+                      <li><a class="cbp-lightbox" href="assets/images/portfolio/grid/57.jpg"><i
+                            class="icofont icofont-search"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--== Portfolio End ==-->
+
+    <!--== Skills Start ==-->
+    <section style="background-image: url(assets/images/background/pattern-bg-dark.jpg);" id="quienessomos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-responsive" src="assets/images/Operadores.jpeg" alt="">
+          </div>
+          <div class="col-md-6">
+            <div class="row chart-style-03 xs-mt-30">
+              <div class="col-md-4 col-sm-6 col-xs-12 sm-mb-30 xs-mb-30 text-center">
+                <div class="chart-circle">
+                  <span class="chart-03" data-percent="20">
+                    <span class="percent dark-color font-20px font-700"></span>
+                  </span>
+                </div>
+                <div class="chart-title">
+                  <span class="white-color font-18px font-700">Clientes</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12 sm-mb-30 xs-mb-30 text-center">
+                <div class="chart-circle">
+                  <span class="chart-03" data-percent="66">
+                    <span class="percent dark-color font-20px font-700"></span>
+                  </span>
+                </div>
+                <div class="chart-title">
+                  <span class="white-color font-18px font-700">Pozos</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12 sm-mb-30 xs-mb-30 text-center">
+                <div class="chart-circle">
+                  <span class="chart-03" data-percent="0">
+                    <span class="percent dark-color font-20px font-700"></span>
+                  </span>
+                </div>
+                <div class="chart-title">
+                  <span class="white-color font-18px font-700">Incidentes</span>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="bs-left-space white-color">
+                  <h2 class="mt-40 font-700">Nosotros</h2>
+                  <p>
+                    Somos una compañía colombiana dedicada a la prestación de servicios de monitoreo y análisis de parámetros de perforación, 
+                    control geológico, análisis y procesamiento de datos, y transmisión en tiempo real para la toma de decisiones y la 
+                    optimización de los procesos operativos de las empresas del sector minero energético.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--== Skills End ==-->
+
+    <!--== Clients Start ==-->
+    <section class="white-bg" style="height: 300px;">
+      <div class="container">
+        <div class="row">
+          <div class="client-slider slick">
+            <div class="client-logo"> <img class="img-responsive" src="assets/images/clients/1.png" alt="01" /> </div>
+            <div class="client-logo"> <img class="img-responsive" src="assets/images/clients/2.png" alt="02" /> </div>
+            <div class="client-logo"> <img class="img-responsive" src="assets/images/clients/3.png" alt="03" /> </div>
+            <div class="client-logo"> <img class="img-responsive" src="assets/images/clients/4.png" alt="04" /> </div>
+            <div class="client-logo"> <img class="img-responsive" src="assets/images/clients/1.png" alt="01" /> </div>
+            <div class="client-logo"> <img class="img-responsive" src="assets/images/clients/2.png" alt="02" /> </div>
+            <div class="client-logo"> <img class="img-responsive" src="assets/images/clients/3.png" alt="03" /> </div>
+            <div class="client-logo"> <img class="img-responsive" src="assets/images/clients/4.png" alt="04" /> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--== Clients End ==-->
+
+    <!--== Call to Action Start ==-->
+    <section  class="parallax-bg fixed-bg" 
+              data-parallax-bg-image="assets/images/background/parallax-bg.jpg"
+              data-parallax-speed="0.8" 
+              data-parallax-direction="up"
+              id="contacto">
+      <div class="overlay-bg"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center parallax-content">
+            <div class="center-layout">
+              <div class="v-align-middle">
+                <h2 class="font-700">Trabajemos juntos!</h2>
+                <h4 class="karla-font">si estás interesado en contactarnos llena el siguiente formulario</h4>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--== Call to Action End ==-->
+
+    <!--== Footer Start ==-->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="widget widget-text">
+                <h5 class="widget-title">Información</h5>
+                <p>
+                  Epsilog
+                </p>
+                <div class="contact-detail">
+                  <ul>
+                    <li><i class="icofont icofont-location-pin gradient-color"></i>Calle 11 # 31-21 Bogotá Colombia</li>
+                    <li><i class="icofont icofont-ui-call gradient-color"></i> +57 310 295 00 16</li>
+                    <li><i class="icofont icofont-envelope gradient-color"></i> gerencia@epsilog.com.co</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="widget widget-links">
+                <h5 class="widget-title">Useful Links</h5>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="index.html#servicios">Servicios</a></li>
+                  <li><a href="index.html#quienessomos">Quienes somos</a></li>
+                  <li><a href="index.html#contacto">Contáctanos</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4">
+              <div class="widget widget-text">
+                <h5 class="widget-title">Últimas noticias</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="copy-right text-left">© 2023 <span class="gradient-color">Epsilog.</span> All rights
+                reserved</div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <ul class="social-media">
+                <li><a href="#" class="icofont icofont-social-facebook"></a></li>
+                <li><a href="#" class="icofont icofont-social-twitter"></a></li>
+                <li><a href="#" class="icofont icofont-social-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <!--/.Footer-->
-  
-    <!-- SCRIPTS -->
-    
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Initializations -->
-    <script type="text/javascript">
-      // Animations initialization
-      new WOW().init();
-    </script>
-  
-    <!-- Time Counter -->
-    <script type="text/javascript">
-      // Set the date we're counting down to
-      var countDownDate = new Date(2023,02,20);
-      /* countDownDate.setDate(countDownDate.getDate() + 30); */
-  
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-  
-        // Get todays date and time
-        var now = new Date().getTime();
-  
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
-  
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-        // Display the result in the element with id="demo"
-        document.getElementById("time-counter").innerHTML = days + "d " + hours + "h " +
-          minutes + "m " + seconds + "s ";
-  
-        // If the count down is finished, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("time-counter").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-  
-    </script>
+    <!--== Footer End ==-->
 
+    <!--== Go to Top  ==-->
+    <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+    <!--== Go to Top End ==-->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" ></script>
-    <script src="js/all.js"></script>
-      
-  
+  </div>
+  <!--== Wrapper End ==-->
+
+  <!--== Javascript Plugins ==-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/master.js"></script>
+
+  <!-- Revolution js Files -->
+  <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.carousel.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.kenburn.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.migration.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.parallax.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="revolution/js/revolution.extension.video.min.js"></script>
+  <!--== Javascript Plugins End ==-->
+
 </body>
 
 </html>
