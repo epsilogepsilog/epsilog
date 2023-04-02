@@ -59,6 +59,22 @@
 
 /* Transitons */
 
+.tab-pane.active {
+   animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 *{transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s;}
 *:hover{transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; }
 .transition-none *, .home-slider *, .mfp-container *, .attr-nav *, .cbp-wrapper *, .parallax, .rev-slider *, #loader-overlay *, .menu-overlay, .tr-products *, #loader-overlay, .main-box-title *, .skillbar-wrap * {transition-timing-function: none;-moz-transition-timing-function: none;-webkit-transition-timing-function: none;-o-transition-timing-function: none;
